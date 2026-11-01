@@ -13,7 +13,7 @@
 
 ## 📸 Screenshots
 ![App Screenshot](./public/image.png) 
-*(Add a screenshot of the app to the public folder and update this)*
+
 
 ## ✨ Features
 - **Dynamic Rendering:** Utilizes React.js to render potential thousands of items efficiently.
