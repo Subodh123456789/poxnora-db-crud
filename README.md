@@ -12,7 +12,7 @@
 **[View Live Application](https://solitary-phantasm-g4qpwj7x76rq3pp6v-3000.app.github.dev/)**
 
 ## 📸 Screenshots
-![App Screenshot](./public/screenshot.png) 
+![App Screenshot](./public/image.png) 
 *(Add a screenshot of the app to the public folder and update this)*
 
 ## ✨ Features
