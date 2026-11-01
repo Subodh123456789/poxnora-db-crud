@@ -7,12 +7,13 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
         <h1 style={styles.logo}>
           Pox<span style={{ color: 'var(--primary2)' }}>Nora</span> DB
         </h1>
-        
+
         <input
           type="text"
-          placeholder="Search runes, champions..."
+          aria-label="Search database entries"
+          placeholder="Search champions, spells, equipment..."
           value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
+          onChange={(event) => setSearchQuery(event.target.value)}
           style={styles.searchInput}
         />
       </div>
@@ -24,14 +25,14 @@ const styles = {
   nav: {
     position: 'sticky',
     top: 0,
-    zIndex: 100,
-    background: 'rgba(10, 10, 15, 0.85)',
+    zIndex: 10,
+    background: 'rgba(10, 10, 15, 0.88)',
     backdropFilter: 'blur(12px)',
     borderBottom: '1px solid var(--border)',
     padding: '15px 0',
   },
   container: {
-    maxWidth: '1200px',
+    maxWidth: '1280px',
     margin: '0 auto',
     padding: '0 24px',
     display: 'flex',
@@ -41,20 +42,22 @@ const styles = {
     gap: '15px',
   },
   logo: {
-    fontSize: '1.5rem',
-    fontWeight: '700',
+    fontSize: '1.6rem',
+    fontWeight: 700,
+    letterSpacing: '-0.04em',
   },
   searchInput: {
-    padding: '10px 16px',
+    padding: '12px 18px',
     borderRadius: '50px',
     border: '1px solid var(--border)',
     background: 'var(--card)',
     color: 'var(--text)',
     outline: 'none',
-    width: '280px',
+    width: 'min(420px, 100%)',
     fontFamily: 'inherit',
-    transition: '0.3s',
-  }
+    fontSize: '0.95rem',
+    boxShadow: 'inset 0 1px 2px rgba(0,0,0,0.15)',
+  },
 };
 
 export default Navbar;

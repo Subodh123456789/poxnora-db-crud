@@ -17,21 +17,55 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--bg);
+  background:
+    radial-gradient(circle at top, rgba(124, 58, 237, 0.18), transparent 30%),
+    linear-gradient(180deg, var(--bg), #0f172a 100%);
   color: var(--text);
   line-height: 1.6;
 }
 
-/* Scrollbar Styling */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+.App {
+  min-height: 100vh;
+}
+
+main {
+  min-height: calc(100vh - 76px);
+}
+
+::selection {
+  background: rgba(167, 139, 250, 0.35);
+}
+
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
+
 ::-webkit-scrollbar-track {
-  background: var(--bg);
+  background: rgba(15, 23, 42, 0.8);
 }
+
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: linear-gradient(180deg, var(--primary), var(--primary2));
   border-radius: 10px;
 }
