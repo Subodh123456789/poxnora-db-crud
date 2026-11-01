@@ -7,7 +7,7 @@
 > A modern, database-driven application for PoxNora, built to help users seamlessly access and explore game-related information, champions, and equipment.
 
 ## 🔗 Live Demo
-**[View Live Application](https://Subodh123456789.github.io/poxnora-db-crud/)** *(Replace with your actual link once deployed)*
+**[View Live Application]([https://Subodh123456789.github.io/poxnora-db-crud/](https://solitary-phantasm-g4qpwj7x76rq3pp6v-3000.app.github.dev/))** *(Replace with your actual link once deployed)*
 
 ## 📸 Screenshots
 ![App Screenshot](./public/screenshot.png) 
